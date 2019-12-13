@@ -13113,44 +13113,41 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Churn predication using various classification models on kaggle</span>
-<span class="c1"># telco churn dataset</span>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Churn predication</strong> using various classification models on kaggle
+telco churn dataset</p>
+<p>Makes use of:</p>
+<ul>
+<li>Downsampling to address class imbalance</li>
+<li>RandomForest used with gridsearch for hyperparameter tuning</li>
+<li>SHAP for global and local feature interpetability</li>
+</ul>
+<p>Key conclusions for telco:</p>
+<ul>
+<li><p>By predicting churn, the company can intercede to reduce the
+likihood of the identified customer cancelling their service</p>
+</li>
+<li><p>Worth encouraging people to call customer service; maybe issues
+can be ironed out or teaser rate can be offered?</p>
+</li>
+<li><p>International plan and total day charge/minutes seem to be the
+other important features; these features would suggest that the
+person using the telephone may spend more as a result of a higher
+proportion of daytime and international calls (both less likely
+to be on free plan); this suggests that customers are economically
+rational, on the presupposition that they may be able to get a
+better deal elsewhere, as a heavier user of the service</p>
+</li>
+<li><p>The State that the customer resides in has negligible impact</p>
+</li>
+<li><p>Recall is key metric as we want to minimise false negatives</p>
+</li>
+</ul>
 
-<span class="c1"># Makes use of:</span>
-<span class="c1"># - Downsampling to address class imbalance</span>
-<span class="c1"># - RandomForest used with gridsearch for hyperparameter tuning</span>
-<span class="c1"># - SHAP for global and local feature interpetability</span>
-
-<span class="c1"># Key conclusions for telco:</span>
-
-<span class="c1"># - By predicting churn, the company can intercede to reduce the</span>
-<span class="c1"># likihood of the identified customer cancelling their service</span>
-
-<span class="c1"># - Worth encouraging people to call customer service; maybe issues</span>
-<span class="c1"># can be ironed out or teaser rate can be offered?</span>
-
-<span class="c1"># - International plan and total day charge/minutes seem to be the</span>
-<span class="c1"># other important features; these features would suggest that the</span>
-<span class="c1"># person using the telephone may spend more as a result of a higher</span>
-<span class="c1"># proportion of daytime and international calls (both less likely</span>
-<span class="c1"># to be on free plan); this suggests that customers are economically</span>
-<span class="c1"># rational, on the presupposition that they may be able to get a</span>
-<span class="c1"># better deal elsewhere, as a heavier user of the service</span>
-
-<span class="c1"># - The State that the customer resides in has negligible impact</span>
-
-<span class="c1"># - Recall is key metric as we want to minimise false negatives</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
