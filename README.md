@@ -2,8 +2,6 @@
 
 ### Jupyter notebooks
 
-Jupyter notebooks, hopefully entertaining and/or informative
-
 - - - -
 #### Files in this repo:
 
