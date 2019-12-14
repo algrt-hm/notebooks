@@ -11,4 +11,4 @@
 
 **Customer churn example notebook**
 * [customer_churn/](https://algrt-hm.github.io/notebooks/customer_churn/) - HTML version; just the notebook for now
-* [telco_churn.ipynb](customer_churn/telco_churn.ipynb) - uses github's live preview of Jupyter notebook which breaks the navigation links
+* [telco_churn.ipynb](customer_churn/telco_churn.ipynb) - uses github's live preview of Jupyter notebook which breaks the SHAP outputs as they use javascript
